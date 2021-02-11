@@ -1,60 +1,75 @@
-<!DOCTYPE html> 
-<html> 
-	<head> 
-    <title>Google Spreadsheet Javascript</title> 
-    <script type="text/javascript" src="jquery-1.4.4.min.js"></script>
-    <script type="text/javascript" src="google-spreadsheet.js"></script>
-    <style>
-      body{
-        background-color: black;
-        color: green;
-        font-size: .8em;
-        font-family: sans-serif;
+<!doctype html>
+<html>
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+  var spData = null;
+  function doData(json) {
+      spData = json.feed.entry;
+  }
+  
+  function drawCell(tr, val) {
+      var td = $("<td/>");
+      tr.append(td);
+      td.append(val);
+      return td;
+  }
+  function drawRow(table, rowData) {
+	  if (rowData == null) return null;
+	  if (rowData.length == 0) return null;
+	  var tr = $("<tr/>");
+	  table.append(tr);
+	  for(var c=0; c<rowData.length; c++) {
+		  drawCell(tr, rowData[c]);
+	  }
+	  return tr;
+  }
+  
+  function drawTable(parent) {
+	  var table = $("<table/>");
+	  parent.append(table);
+	  return table;
+  }
+  
+  function readData(parent) {
+      var data = spData;
+      var table = drawTable(parent);
+      var rowData = [];
+      
+      for(var r=0; r<data.length; r++) {
+          var cell = data[r]["gs$cell"];
+          var val = cell["$t"];
+          if (cell.col == 1) {
+              drawRow(table, rowData);
+              rowData = [];
+          }
+          rowData.push(val);
       }
-      h1,a{ color: yellow}
-      input{
-        font-size: .8em;
-        background-color: black;
-        color:white;
-      }
-    </style>
-  </head> 
-  <body> 
-    <h1>Google Spreadsheet Javascript</h1>
-    Here is the most basic usage:
-    <pre id='code'></pre>
-    And here are the results:
-    <pre id='results'></pre>
-    <div id='links'>
-      Github URL: <a href='https://github.com/mikeymckay/google-spreadsheet-javascript'>https://github.com/mikeymckay/google-spreadsheet-javascript</a><br/>
-      Source URL for above spreadsheet data: <span id='spreadsheet_url'></span><br/>
-      Try your own spreadsheet (needs to be <a href='https://docs.google.com/support/bin/answer.py?hl=en&answer=47134'>published</a>):<br/>
-      <input style='width:700px' name='url' type='text'></input>
-      <input onclick='document.location = document.location.pathname + "?url="+$("input[name]").val()' type='submit'></input>
-    </div>
-    <iframe width='500' height='300' frameborder='0' ></iframe>
-    <script>
-    </script>
-    <script id='script'>
-      localStorage.clear();
-      var sample_url = "https://spreadsheets.google.com/pub?key=0Ago31JQPZxZrdHF2bWNjcTJFLXJ6UUM5SldEakdEaXc&hl=en&output=html";
-      var url_parameter = document.location.search.split(/\?url=/)[1]
-      var url = url_parameter || sample_url;
-      var googleSpreadsheet = new GoogleSpreadsheet();
-      googleSpreadsheet.url(url);
-      googleSpreadsheet.load(function(result) {
-        $('#results').html(JSON.stringify(result).replace(/,/g,",\n"));
-      });
-    </script>
-    <script>
-      $('#code').html($('#script').html())
-      $('#spreadsheet_url').html("<a href='"+url+"'>"+url+"</a>");
-      $('#iframe').attr("src",url);
-      $('input[name]').val(url);
-      if (url != sample_url){
-        $("div#links").append("<br/><a href='"+document.location.pathname+"'>Original Sample Spreadsheet</a>")
-      }
-    </script>
-  </body>
-</html>
+      drawRow(table, rowData);
+  }
+  $(document).ready(function(){
+      readData($("#data"));
+  });
 
+  </script>   
+<script src="https://spreadsheets.google.com/feeds/cells/1hbHqrnYa4oMUquZcq8WkTJk0kI0t9scGBwro-EH-ALA/1/public/values?alt=json-in-script&callback=doData"></script>
+<style type="text/css">
+  table {border-collapse: collapse; width: 100%;}
+  th, td {border: thin solid black; padding: 3px;}
+  tr.head th, tr.head td {background-color: #EDEDED; border-bottom: 4px double black;}
+  span.linetitle {font-weight: bold;}
+  div.lineclass {font-style: italic;}
+  .title, .result {width: 80%;}
+  .notes {width: 15%;}
+  h1 {text-align: center;}
+  body {margin: 12px; font-size: 12px;}
+</style>
+<style type="text/css" media="print">
+  form {display: none;}
+</style>
+</head>
+<body>
+<h1>Parse Google Spreadsheet with JavaScript</h1> 
+<div id="data"/>
+</body>
+</html> 

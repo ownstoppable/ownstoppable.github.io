@@ -299,7 +299,11 @@ h1 {
 .opacity-60 {
   opacity: 0.60; }
 
-
+.days{
+	margin: 150px 0 150px 0;
+	font-size: 150px;
+	line-height: 120px;
+}
 
 .color-bg-heading {
   background-color: #292f35; }

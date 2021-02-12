@@ -1,0 +1,656 @@
+/*  [ 01 ] - Small Reset
+=========================== */
+body, ul, h1, li {
+  margin: 0;
+  padding: 0; }
+
+/*  [ 02 ] - Body
+==================== */
+body {
+  width: 100%;
+  position: relative;
+  font: 16px/1.7 "Muli", "Cairo", sans-serif;
+  background: #fff;
+  color: #8a949f; }
+
+#full-container {
+  overflow: hidden;
+  position: relative;
+  max-width: 100%; }
+
+/* Boxed Width */
+
+/* Custom Default Content Width */
+@media (min-width: 1200px) {
+  .container {
+    width: 960px; } }
+
+/* Removing last element margin bottom in column */
+
+[class*="col-"] .entry:last-child {
+  margin-bottom: 0; }
+
+/*  [ 03 ] - General Links
+============================= */
+a {
+  outline: none !important;
+  border: none; }
+
+a {
+  text-decoration: none;
+  color: #1b8bf9;
+  transition: all 0.15s; }
+
+a:hover {
+  text-decoration: none;
+  color: #111; }
+
+a:focus {
+  color: #666;
+  text-decoration: none; }
+
+/*  [ 04 ] - Headings
+======================== */
+h1 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: "Hind", "Droid Arabic Kufi", sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #292f35; }
+  h1 a {
+    text-decoration: none;
+    color: #111;
+    transition: all 0.2s; }
+    h1 a:hover {
+      color: #666; }
+
+h1 {
+  font-size: 35px; }
+
+.text-white h1 {
+  color: #fff; }
+
+/* Main Heading */
+
+/* Subheaders */
+
+/*  [ 05 ] - Paragraphs
+========================== */
+
+/*  [ 06 ] - Images
+====================== */
+
+/*  [ 07 ] - Strong
+====================== */
+
+/*  [ 08 ] - Texts Highlighting Selection
+============================================ */
+
+::selection {
+  background: #c0eaf5;
+  color: #333; }
+
+/*  [ 09 ] - Text Colored
+============================ */
+.colored {
+  color: #1b8bf9; }
+
+/*  [ 10 ] - Form Settings
+============================ */
+
+/**
+ * -------------------------------------------------------------------------------
+ * ( 02 ) - General Contents
+ * -------------------------------------------------------------------------------
+ *
+ *  This part contains the basic general contents like box preview, image  
+ *  preview, flat section, parallax section .. etc.
+ *
+ * ------
+ *
+ *  General Contents divided to the following sections:
+ *
+ *    |
+ *    |-->  [ 01 ] - Flat Section
+ *    |-->  [ 02 ] - Parallax Section
+ *    |-->  [ 03 ] - Overlay Colored & Pattern
+ *    |-->  [ 04 ] - Image BG
+ *    |-->  [ 05 ] - Slider Image BG
+ *    |-->  [ 06 ] - Image Preview
+ *    |-->  [ 07 ] - Video Preview
+ *    |-->  [ 08 ] - Box Info
+ *    |-->  [ 09 ] - Divider Space
+ *    |-->  [ 10 ] - Magnific Popup
+ *    |-->  [ 11 ] - Icons
+ *    |-->  [ 12 ] - Buttons
+ *    |-->  [ 13 ] - Social Icons
+ *    |-->  [ 14 ] - Testimonial Single 1
+ *    |-->  [ 15 ] - Scroll Progress
+ *    |-->  [ 16 ] - Website Loading
+ *    |-->  [ 17 ] - Scroll Top Icon
+ *
+ */
+/*  [ 01 ] - Flat Section
+=========================== */
+
+/*  [ 02 ] - Parallax Section
+=============================== */
+
+/*  [ 03 ] - Overlay Colored & Pattern
+======================================== */
+.overlay-colored {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+
+.overlay-colored {
+  z-index: 1; }
+
+/*  [ 04 ] - Image BG
+======================= */
+
+/*  [ 05 ] - Slider Image BG
+============================== */
+
+/*  [ 06 ] - Image Preview
+============================ */
+
+/*  [ 07 ] - Video Preview
+============================ */
+
+/*  [ 08 ] - Box Info
+======================= */
+
+/*  [ 09 ] - Divider Space
+============================ */
+
+/*  Divider Space with Line */
+
+/* Divider Space with Two Lines */
+
+/*  [ 10 ] - Magnific Popup
+============================= */
+/* Popup Fade Effect */
+
+/*  [ 11 ] - Icons
+==================== */
+.icon {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  /* Sizes */
+  /* Colors */
+  /* Spaced */
+  /* Flat Icons [ Custom Fonts ] */ }
+  .icon i {
+    display: block; }
+  .icon.x4 {
+    width: 65px;
+    height: 65px;
+    font-size: 65px; }
+  .icon.colorful i {
+    color: #1b8bf9; }
+
+/*  [ 12 ] - Buttons
+====================== */
+.btn {
+  display: inline-block;
+  padding: 17px 35px;
+  font-size: 14px;
+  border-radius: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  text-align: center;
+  border: 2px solid;
+  box-shadow: 0 3px 14px 4px rgba(27, 139, 249, 0.22);
+  font-family: "Hind", "Droid Arabic Kufi", sans-serif;
+  transition: color 0.2s, background 0.2s, border-color 0.2s;
+  /* Sizes */
+  /* Styles */ }
+  .btn.rounded {
+    border-radius: 999px; }
+  .btn.xx-large {
+    padding: 12px 55px;
+    font-size: 24px;
+    border-width: 3px; }
+  .btn.colorful, .btn.hover-colorful:hover {
+    background-color: #1b8bf9;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    border-color: #1b8bf9;
+    box-shadow: 0 3px 14px 4px rgba(27, 139, 249, 0.22); }
+   .btn.hover-colorful-darken:hover {
+    background-color: #067cef;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    border-color: #067cef;
+    box-shadow: 0 3px 14px 4px rgba(6, 124, 239, 0.22); }
+
+@media (max-width: 480px) {
+  .btn.xx-large {
+    padding: 6px 45px;
+    font-size: 20px; } }
+
+/*  [ 13 ] - Social Icons
+=========================== */
+/* Social Icons */
+.social-icons {
+  position: relative;
+  margin-bottom: -5px;
+  list-style: none;
+  font-size: 0;
+  /* Sizes */
+  /* Animated */
+  /* Colors */ }
+  .social-icons li {
+    display: inline-block;
+    margin-bottom: 5px; }
+    .social-icons li + li {
+      margin-left: 5px; }
+    .social-icons li a {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      background: transparent;
+      border-radius: 3px;
+      transition: all 0.3s ease; }
+      .social-icons li a i {
+        position: relative;
+        top: 50%;
+        display: block;
+        margin: 0 auto;
+        transform: translateY(-50%);
+        transition: all 0.25s ease; }
+        .social-icons li a i:first-child, .social-icons li a i:last-child {
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+        .social-icons li a i:last-child {
+          opacity: 0; }
+  .social-icons.x4 li a {
+    width: 40px;
+    height: 40px;
+    font-size: 17px; }
+  .social-icons.x4 li i:first-child, .social-icons.x4 li i:last-child {
+    width: 26px;
+    height: 26px; }
+  .social-icons.icon-only li + li {
+    margin-left: 2px; }
+  .social-icons.icon-only.x4 li a {
+    width: 32px;
+    height: 32px; }
+  .social-icons.animated li a:hover i:last-child {
+    opacity: 1; }
+  .social-icons.animated li a:hover i:first-child {
+    opacity: 0; }
+  .social-icons.animated.x4 li a:hover i:first-child {
+    margin-top: -26px; }
+  
+  .social-icons.grey li a,
+  .social-icons.hover-colorful li a:hover {
+    background: transparent; }
+  .social-icons.grey li a i:first-child {
+    color: #8a949f; }
+  .social-icons.hover-colorful li a i:last-child,
+  .social-icons.hover-colorful:not(.animated) li a:hover i:first-child {
+    color: #1b8bf9; }
+
+/*  [ 14 ] - Testimonial Single 1
+=================================== */
+
+/*  [ 15 ] - Scroll Progress
+============================== */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 25;
+  margin: auto;
+  width: 100%;
+  height: 3px; }
+  #scroll-progress .scroll-progress {
+    height: 100%; }
+  #scroll-progress .scroll-progress {
+    width: 0;
+    background-color: #1b8bf9; }
+  #scroll-progress .scroll-percent {
+    float: right;
+    width: 80px;
+    margin-top: 2px;
+    color: #fff;
+    font-weight: 700;
+    background-color: #000;
+    padding: 5px;
+    text-align: center;
+    display: none; }
+
+/*  [ 16 ] - Website Loading
+============================== */
+
+/*  [ 17 ] - Scroll Top Icon
+============================== */
+
+/**
+  * -------------------------------------------------------------------------------
+  * ( 03 ) - Header
+  * -------------------------------------------------------------------------------
+  *
+  *  This part contains logo, main menu and call to action button.
+  *
+  * ------
+  *
+  *  Header is divided to the following sections:
+  *
+  *    |
+  *    |-->  [ 01 ] - Logo
+  *    |-->  [ 02 ] - Header Bars
+  *
+  */
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  font-size: 13px; }
+
+/*  [ 01 ] - Logo
+=================== */
+
+/*  [ 02 ] - Header Bars
+========================== */
+/* Header Bar */
+
+/* Header Bar Sticky */
+
+/* Header Bar 1 */
+
+/**
+  * -------------------------------------------------------------------------------
+  * ( 04 ) - Banner
+  * -------------------------------------------------------------------------------
+  *
+  *  This part contains all banner related contents like banner slider, bannar
+  *  parallax
+  *
+  * ------
+  *
+  *  Banner is divided to the following sections:
+  *
+  *    |
+  *    |-->  [ 01 ] - Banner Parallax
+  *
+  */
+#banner {
+  position: relative;
+  overflow: hidden; }
+
+/*  [ 01 ] - Banner Parallax
+============================== */
+.banner-parallax {
+  overflow: hidden;
+  position: relative;
+  background-color: #bbb;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .banner-parallax,
+  .banner-parallax .row > [class*="col-"] {
+    min-height: 800px; }
+  .banner-parallax .row {
+    display: flex;
+    align-items: center; }
+  .banner-parallax .row > [class*="col-"] {
+    display: flex;
+    align-items: center; }
+  .banner-parallax .container,
+  .banner-parallax .row,
+  .banner-parallax .row > [class*="col-"] {
+    height: 100%;
+    z-index: 1; }
+
+/* Slide Content */
+.slide-content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: 0;
+  z-index: 1; }
+  .slide-content h1 {
+    position: relative;
+    font-size: 50px;
+    line-height: 70px; }
+  .slide-content .description {
+    margin-top: 15px;
+    width: 70%;
+    line-height: 1.9;
+    font-size: 16px;
+    opacity: 0.85; }
+  .slide-content .text-center .description {
+    margin-left: auto;
+    margin-right: auto; }
+  .page-thank-you .slide-content .description {
+    width: 90%; }
+
+@media (max-width: 480px) {
+  .slide-content .description {
+    width: 100%; } }
+
+/* Banner Center Box */
+.banner-center-box {
+  padding: 120px 0;
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%; }
+  .banner-center-box > * {
+    position: relative; }
+  .banner-center-box.text-white h1 {
+    color: #fff; }
+  .banner-center-box.text-white .description {
+    color: white; }
+
+.banner-center-box h1:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0; }
+
+/* Opacity Values */
+
+.opacity-60 {
+  opacity: 0.60; }
+
+/* Colors */
+
+.color-bg-heading {
+  background-color: #292f35; }
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #333; }
+
+@media (max-width: 992px) {
+  /* Column With Helper Classes Optimization */
+  /* Banner Parallax */
+  .banner-parallax,
+  .banner-parallax .row > [class*="col-"] {
+    height: auto !important;
+    min-height: auto !important; }
+  .banner-parallax .row {
+    flex-direction: column; }
+  .banner-parallax .row > [class*="col-"] {
+    align-self: stretch;
+    flex-grow: 1; }
+  .banner-parallax [class*="col-"]:not(:first-child) .banner-center-box {
+    padding-top: 0;
+    margin-top: -30px; }
+  .slide-content,
+  .banner-center-box {
+    position: initial; }
+  .banner-center-box {
+    display: block;
+    top: 0;
+    width: 100%;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    transform: translateY(0); }
+  /* Slider */ }
+
+@media (max-width: 768px) {
+  .slide-content h1 {
+    font-size: 35px;
+    line-height: 45px; } }
+
+@media (max-width: 480px) {
+  .slide-content h1 {
+    font-size: 30px;
+    line-height: 45px; }
+  .slide-content .description {
+    margin-top: 0; } }
+
+/**
+  * -------------------------------------------------------------------------------
+  * ( 05 ) - Content
+  * -------------------------------------------------------------------------------
+  *
+  *  This part contains all content sections in main content
+  *
+  * ------
+  *
+  *  Content is divided to the following sections:
+  *
+  *    |
+  *    |-->  [ 01 ] - Content
+  *    |-->  [ 02 ] - Sidebar
+  *    |-->  [ 03 ] - Intro Features
+  *    |-->  [ 04 ] - Pricing Plans
+  *    |-->  [ 05 ] - Clients Testimonials
+  *    |-->  [ 06 ] - CTA Title 1
+  *
+  */
+#content {
+  position: relative;
+  line-height: 1.9;
+  background-color: #fff;
+  z-index: 0;
+  /* Important for icons animations */ }
+
+/*  [ 01 ] - Content
+====================== */
+
+/*  [ 02 ] - Sidebar
+================================= */
+/*  [ 03 ] - Intro Features
+============================= */
+
+/* Box info 1 */
+
+/* Box info 2 */
+
+/*  [ 04 ] - Pricing Plans
+============================ */
+
+/* Pricing Table */
+
+/* Counter Stats */
+
+/*  [ 05 ] - Clients Testimonials
+=================================== */
+/* Slider Testimonial */
+
+/* Box Form */
+
+/* CTA Subscribe */
+
+/* CTA Subscribe Notifications */
+
+/* Popup Preview */
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  background: #333; }
+
+/*  [ 06 ] - CTA Title 1
+========================== */
+
+/**
+ *  -------------------------------------------------------------------------------
+ *  ( 06 ) - Footer
+ *  -------------------------------------------------------------------------------
+ *
+ *  This part contains footer and mini footer
+ *
+ *  ------
+ *
+ *  It has the following code:
+ *
+ *    |
+ *    |-->  [ 01 ] - Footer
+ *    |-->  [ 02 ] - Footer Bars
+ 
+ */
+/*  [ 01 ] - Footer
+===================== */
+#footer {
+  overflow: hidden;
+  position: relative;
+  background-color: #fff; }
+
+/* Box Widget */
+
+/*  [ 02 ] - Footer Bars
+========================== */
+/* Footer Bar */
+.footer-bar {
+  padding: 60px 0;
+  background: transparent; }
+  .footer-bar + .footer-bar {
+    border-top: 1px solid #181818; }
+  .footer-bar .fb-row {
+    display: flex;
+    align-items: center; }
+    .footer-bar .fb-row + .fb-row {
+      padding-top: 50px;
+      margin-top: 50px;
+      border-top: 1px solid #2b2b2b; }
+
+/* Footer Bar 1 */
+#footer-bar-1 {
+  padding: 20px 0; }
+  #footer-bar-1 .social-icons {
+    margin-left: auto; }
+
+.copyrights-message {
+  font-size: 14px;
+  font-family: "Hind", "Droid Arabic Kufi", sans-serif; }
+
+@media (max-width: 768px) {
+  #footer-bar-1 .fb-row {
+    flex-direction: column; }
+  #footer-bar-1 .copyrights-message:first-child {
+    margin-top: 5px; }
+  #footer-bar-1 .social-icons {
+    margin: 10px 0 0; } }

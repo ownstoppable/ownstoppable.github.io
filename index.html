@@ -1,22 +1,126 @@
-<!doctype html>
-<html>
-	<head>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<script type="text/javascript">
-			var spData = null;
-			function doData(json) {
-				spData = json.feed.entry;
-			}
-			
-			$(document).ready(function(){
-				$('#number').html(spData[0]["gs$cell"]["$t"] + " days");
-			});
+<!DOCTYPE html>
+<html lang="en-US">
 
-		</script>   
-		<script src="https://spreadsheets.google.com/feeds/cells/1VfbGtz29uc9FTYOZNUW21w-HcrdpPhVMQcw7diQMWE0/1/public/values?alt=json-in-script&callback=doData"></script>
-	</head>
-	<body>
-		<h1>App Lab Average Review Time</h1> 
-		<div id="number"/>
-	</body>
-</html> 
+<head>
+
+	<!-- Meta
+	============================================= -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1, max-scale=1">
+
+    <meta name="author" content="Vasco Torres">
+    <!-- description -->
+    <meta name="description" content="Quest Review Times">
+    <!-- keywords -->
+    <meta name="keywords" content="Quest, Review, Times">
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="css/css-assets.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Hind:500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i" rel="stylesheet">
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		var spData = null;
+		function doData(json) {
+			spData = json.feed.entry;
+		}
+		
+		$(document).ready(function(){
+			$('#number').html(spData[0]["gs$cell"]["$t"] + " days");
+		});
+
+	</script> 
+
+	<!-- Favicon
+	============================================= -->
+	<link rel="shortcut icon" href="images/general-elements/favicon/favicon.png">
+	<link rel="apple-touch-icon" href="images/general-elements/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/general-elements/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/general-elements/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Title
+	============================================= -->
+	<title>Quest Review Times</title>
+
+</head>
+
+<body class="page-thank-you">
+
+	<div id="scroll-progress"><div class="scroll-progress"><span class="scroll-percent"></span></div></div>
+
+	<!-- Document Full Container
+	============================================= -->
+	<div id="full-container">
+
+		<!-- Banner
+		============================================= -->
+		<section id="banner">
+
+			<div class="banner-parallax" data-banner-height="850">
+				<div class="overlay-colored color-bg-heading opacity-60"></div><!-- .overlay-colored end -->
+				<div class="slide-content">
+
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2">
+
+								<div class="banner-center-box text-white text-center">
+									<h1>The average review time in the past 30 days for new app lab submissions is</h1>
+									<h1 id="number" style="margin: 150px 0 150px 0;font-size: 150px;line-height: 100px;">4.7 days</h1>
+									<div class="description">
+										There was a total of X new submissions in the last 30 days. These numbers are based on user-reported data and in order to reach higher fidelity we give more weight to verified data.
+									</div>
+								<a class="btn scroll-to xx-large rounded colorful hover-colorful-darken mt-40" href="#header">
+									Submit Review Time
+								</a>
+
+								</div><!-- .banner-center-box end -->
+
+							</div><!-- .col-md-8 end -->
+						</div><!-- .row end -->
+					</div><!-- .container end -->
+
+				</div><!-- .slide-content end -->
+			</div><!-- .banner-parallax end -->
+
+		</section><!-- #banner end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer">
+
+			<div id="footer-bar-1" class="footer-bar">
+
+				<div class="footer-bar-wrap">
+
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+
+								<div class="fb-row">
+									<div class="copyrights-message">2021 © <a href="https://vascotorres.com"><span class="colored">Vasco Torres</span></a>. All Rights Reserved.</div>
+									<ul class="social-icons animated x4 grey hover-colorful icon-only">
+										<li><a class="si-facebook" href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a></li>
+										<li><a class="si-twitter" href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a></li>
+										<li><a class="si-instagramorange" href="#"><i class="fa fa-instagram"></i><i class="fa fa-instagram"></i></a></li>
+									</ul><!-- .social-icons end -->
+								</div><!-- .fb-row end -->
+
+							</div><!-- .col-md-12 end -->
+						</div><!-- .row end -->
+					</div><!-- .container end -->
+
+				</div><!-- .footer-bar-wrap -->
+
+			</div><!-- #footer-bar-1 end -->
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #full-container end -->
+
+</body>
+</html>

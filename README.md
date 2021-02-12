@@ -1,6 +1,6 @@
 ### App Lab Review Times
 
-Simple website that shows app lab review times from user contributions
+Simple website that shows app lab review times from user contributions using a google spreadsheet/form
 
 ### Credits
 

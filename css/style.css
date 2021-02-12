@@ -262,6 +262,11 @@ h1 {
     position: relative;
     font-size: 50px;
     line-height: 70px; }
+	.slide-content h1 p{
+		margin: 150px 0 150px 0;
+		font-size: 150px;
+		line-height: 120px;
+	}
   .slide-content .description {
     margin-top: 15px;
     width: 70%;
@@ -299,11 +304,7 @@ h1 {
 .opacity-60 {
   opacity: 0.60; }
 
-.days{
-	margin: 150px 0 150px 0;
-	font-size: 150px;
-	line-height: 120px;
-}
+
 
 .color-bg-heading {
   background-color: #292f35; }

@@ -1,11 +1,9 @@
-/*  [ 01 ] - Small Reset
-=========================== */
+
 body, ul, h1, li {
   margin: 0;
   padding: 0; }
 
-/*  [ 02 ] - Body
-==================== */
+
 body {
   width: 100%;
   position: relative;
@@ -18,20 +16,13 @@ body {
   position: relative;
   max-width: 100%; }
 
-/* Boxed Width */
-
-/* Custom Default Content Width */
 @media (min-width: 1200px) {
   .container {
     width: 960px; } }
 
-/* Removing last element margin bottom in column */
-
 [class*="col-"] .entry:last-child {
   margin-bottom: 0; }
 
-/*  [ 03 ] - General Links
-============================= */
 a {
   outline: none !important;
   border: none; }
@@ -49,8 +40,6 @@ a:focus {
   color: #666;
   text-decoration: none; }
 
-/*  [ 04 ] - Headings
-======================== */
 h1 {
   margin-top: 0;
   margin-bottom: 15px;
@@ -71,74 +60,13 @@ h1 {
 .text-white h1 {
   color: #fff; }
 
-/* Main Heading */
-
-/* Subheaders */
-
-/*  [ 05 ] - Paragraphs
-========================== */
-
-/*  [ 06 ] - Images
-====================== */
-
-/*  [ 07 ] - Strong
-====================== */
-
-/*  [ 08 ] - Texts Highlighting Selection
-============================================ */
-
 ::selection {
   background: #c0eaf5;
   color: #333; }
 
-/*  [ 09 ] - Text Colored
-============================ */
 .colored {
   color: #1b8bf9; }
 
-/*  [ 10 ] - Form Settings
-============================ */
-
-/**
- * -------------------------------------------------------------------------------
- * ( 02 ) - General Contents
- * -------------------------------------------------------------------------------
- *
- *  This part contains the basic general contents like box preview, image  
- *  preview, flat section, parallax section .. etc.
- *
- * ------
- *
- *  General Contents divided to the following sections:
- *
- *    |
- *    |-->  [ 01 ] - Flat Section
- *    |-->  [ 02 ] - Parallax Section
- *    |-->  [ 03 ] - Overlay Colored & Pattern
- *    |-->  [ 04 ] - Image BG
- *    |-->  [ 05 ] - Slider Image BG
- *    |-->  [ 06 ] - Image Preview
- *    |-->  [ 07 ] - Video Preview
- *    |-->  [ 08 ] - Box Info
- *    |-->  [ 09 ] - Divider Space
- *    |-->  [ 10 ] - Magnific Popup
- *    |-->  [ 11 ] - Icons
- *    |-->  [ 12 ] - Buttons
- *    |-->  [ 13 ] - Social Icons
- *    |-->  [ 14 ] - Testimonial Single 1
- *    |-->  [ 15 ] - Scroll Progress
- *    |-->  [ 16 ] - Website Loading
- *    |-->  [ 17 ] - Scroll Top Icon
- *
- */
-/*  [ 01 ] - Flat Section
-=========================== */
-
-/*  [ 02 ] - Parallax Section
-=============================== */
-
-/*  [ 03 ] - Overlay Colored & Pattern
-======================================== */
 .overlay-colored {
   position: absolute;
   width: 100%;
@@ -149,43 +77,12 @@ h1 {
 .overlay-colored {
   z-index: 1; }
 
-/*  [ 04 ] - Image BG
-======================= */
-
-/*  [ 05 ] - Slider Image BG
-============================== */
-
-/*  [ 06 ] - Image Preview
-============================ */
-
-/*  [ 07 ] - Video Preview
-============================ */
-
-/*  [ 08 ] - Box Info
-======================= */
-
-/*  [ 09 ] - Divider Space
-============================ */
-
-/*  Divider Space with Line */
-
-/* Divider Space with Two Lines */
-
-/*  [ 10 ] - Magnific Popup
-============================= */
-/* Popup Fade Effect */
-
-/*  [ 11 ] - Icons
-==================== */
 .icon {
   position: relative;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  /* Sizes */
-  /* Colors */
-  /* Spaced */
-  /* Flat Icons [ Custom Fonts ] */ }
+ }
   .icon i {
     display: block; }
   .icon.x4 {
@@ -195,8 +92,6 @@ h1 {
   .icon.colorful i {
     color: #1b8bf9; }
 
-/*  [ 12 ] - Buttons
-====================== */
 .btn {
   display: inline-block;
   padding: 17px 35px;
@@ -210,8 +105,7 @@ h1 {
   box-shadow: 0 3px 14px 4px rgba(27, 139, 249, 0.22);
   font-family: "Hind", "Droid Arabic Kufi", sans-serif;
   transition: color 0.2s, background 0.2s, border-color 0.2s;
-  /* Sizes */
-  /* Styles */ }
+}
   .btn.rounded {
     border-radius: 999px; }
   .btn.xx-large {
@@ -236,17 +130,12 @@ h1 {
     padding: 6px 45px;
     font-size: 20px; } }
 
-/*  [ 13 ] - Social Icons
-=========================== */
-/* Social Icons */
+
 .social-icons {
   position: relative;
   margin-bottom: -5px;
   list-style: none;
-  font-size: 0;
-  /* Sizes */
-  /* Animated */
-  /* Colors */ }
+  font-size: 0; }
   .social-icons li {
     display: inline-block;
     margin-bottom: 5px; }
@@ -301,11 +190,7 @@ h1 {
   .social-icons.hover-colorful:not(.animated) li a:hover i:first-child {
     color: #1b8bf9; }
 
-/*  [ 14 ] - Testimonial Single 1
-=================================== */
 
-/*  [ 15 ] - Scroll Progress
-============================== */
 #scroll-progress {
   position: fixed;
   top: 0;
@@ -331,28 +216,7 @@ h1 {
     text-align: center;
     display: none; }
 
-/*  [ 16 ] - Website Loading
-============================== */
 
-/*  [ 17 ] - Scroll Top Icon
-============================== */
-
-/**
-  * -------------------------------------------------------------------------------
-  * ( 03 ) - Header
-  * -------------------------------------------------------------------------------
-  *
-  *  This part contains logo, main menu and call to action button.
-  *
-  * ------
-  *
-  *  Header is divided to the following sections:
-  *
-  *    |
-  *    |-->  [ 01 ] - Logo
-  *    |-->  [ 02 ] - Header Bars
-  *
-  */
 #header {
   position: absolute;
   top: 0;
@@ -361,39 +225,11 @@ h1 {
   width: 100%;
   font-size: 13px; }
 
-/*  [ 01 ] - Logo
-=================== */
 
-/*  [ 02 ] - Header Bars
-========================== */
-/* Header Bar */
-
-/* Header Bar Sticky */
-
-/* Header Bar 1 */
-
-/**
-  * -------------------------------------------------------------------------------
-  * ( 04 ) - Banner
-  * -------------------------------------------------------------------------------
-  *
-  *  This part contains all banner related contents like banner slider, bannar
-  *  parallax
-  *
-  * ------
-  *
-  *  Banner is divided to the following sections:
-  *
-  *    |
-  *    |-->  [ 01 ] - Banner Parallax
-  *
-  */
 #banner {
   position: relative;
   overflow: hidden; }
 
-/*  [ 01 ] - Banner Parallax
-============================== */
 .banner-parallax {
   overflow: hidden;
   position: relative;
@@ -416,7 +252,6 @@ h1 {
     height: 100%;
     z-index: 1; }
 
-/* Slide Content */
 .slide-content {
   height: 100%;
   width: 100%;
@@ -460,12 +295,11 @@ h1 {
   padding-bottom: 0;
   margin-bottom: 0; }
 
-/* Opacity Values */
 
 .opacity-60 {
   opacity: 0.60; }
 
-/* Colors */
+
 
 .color-bg-heading {
   background-color: #292f35; }
@@ -484,8 +318,7 @@ body::after {
   background-color: #333; }
 
 @media (max-width: 992px) {
-  /* Column With Helper Classes Optimization */
-  /* Banner Parallax */
+
   .banner-parallax,
   .banner-parallax .row > [class*="col-"] {
     height: auto !important;
@@ -522,63 +355,11 @@ body::after {
   .slide-content .description {
     margin-top: 0; } }
 
-/**
-  * -------------------------------------------------------------------------------
-  * ( 05 ) - Content
-  * -------------------------------------------------------------------------------
-  *
-  *  This part contains all content sections in main content
-  *
-  * ------
-  *
-  *  Content is divided to the following sections:
-  *
-  *    |
-  *    |-->  [ 01 ] - Content
-  *    |-->  [ 02 ] - Sidebar
-  *    |-->  [ 03 ] - Intro Features
-  *    |-->  [ 04 ] - Pricing Plans
-  *    |-->  [ 05 ] - Clients Testimonials
-  *    |-->  [ 06 ] - CTA Title 1
-  *
-  */
 #content {
   position: relative;
   line-height: 1.9;
   background-color: #fff;
-  z-index: 0;
-  /* Important for icons animations */ }
-
-/*  [ 01 ] - Content
-====================== */
-
-/*  [ 02 ] - Sidebar
-================================= */
-/*  [ 03 ] - Intro Features
-============================= */
-
-/* Box info 1 */
-
-/* Box info 2 */
-
-/*  [ 04 ] - Pricing Plans
-============================ */
-
-/* Pricing Table */
-
-/* Counter Stats */
-
-/*  [ 05 ] - Clients Testimonials
-=================================== */
-/* Slider Testimonial */
-
-/* Box Form */
-
-/* CTA Subscribe */
-
-/* CTA Subscribe Notifications */
-
-/* Popup Preview */
+  z-index: 0; }
 
 body::after {
   content: "";
@@ -593,37 +374,11 @@ body::after {
   visibility: hidden;
   background: #333; }
 
-/*  [ 06 ] - CTA Title 1
-========================== */
-
-/**
- *  -------------------------------------------------------------------------------
- *  ( 06 ) - Footer
- *  -------------------------------------------------------------------------------
- *
- *  This part contains footer and mini footer
- *
- *  ------
- *
- *  It has the following code:
- *
- *    |
- *    |-->  [ 01 ] - Footer
- *    |-->  [ 02 ] - Footer Bars
- 
- */
-/*  [ 01 ] - Footer
-===================== */
 #footer {
   overflow: hidden;
   position: relative;
   background-color: #fff; }
 
-/* Box Widget */
-
-/*  [ 02 ] - Footer Bars
-========================== */
-/* Footer Bar */
 .footer-bar {
   padding: 60px 0;
   background: transparent; }
@@ -637,7 +392,6 @@ body::after {
       margin-top: 50px;
       border-top: 1px solid #2b2b2b; }
 
-/* Footer Bar 1 */
 #footer-bar-1 {
   padding: 20px 0; }
   #footer-bar-1 .social-icons {

@@ -6,7 +6,7 @@
 	<!-- Meta
 	============================================= -->
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, intial-scale=1, max-scale=1">
+	<meta name="viewport" content="width=device-width, intial-scale=1, maximum-scale=1">
 
     <meta name="author" content="Vasco Torres">
     <!-- description -->
@@ -31,6 +31,7 @@
 		
 		$(document).ready(function(){
 			$('#number').html(spData[0]["gs$cell"]["$t"] + " days");
+			$('#subCount').html(spData[1]["gs$cell"]["$t"]);
 		});
 
 	</script>
@@ -73,7 +74,7 @@
 									<h1>The average review time in the past 30 days for new app lab submissions is</h1>
 									<h1 id="number" style="margin: 150px 0 150px 0;font-size: 150px;line-height: 100px;">4.7 days</h1>
 									<div class="description">
-										There was a total of X new submissions in the last 30 days. These numbers are based on user-reported data and in order to reach higher fidelity we give more weight to verified data.
+										There was a total of <span id="subCount"></span> new submissions in the last 30 days. These numbers are based on user-reported data and in order to reach higher fidelity we give more weight to verified data.
 									</div>
 								<a class="btn scroll-to xx-large rounded colorful hover-colorful-darken mt-40" href="#header">
 									Submit Review Time

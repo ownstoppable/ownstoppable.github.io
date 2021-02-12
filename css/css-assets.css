@@ -22,8 +22,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url(../fonts/Stroke-Gap-Icons-Webfont/style.css);
-@import url(../fonts/flaticon-leadpower/font/flaticon.css);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
